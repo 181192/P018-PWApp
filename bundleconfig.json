@@ -1,0 +1,20 @@
+[
+  {
+    "outputFileName": "app/gulpfile.min.js",
+    "inputFiles": [
+      "app/gulpfile.js"
+    ]
+  },
+  {
+    "outputFileName": "gulpfile.min.js",
+    "inputFiles": [
+      "gulpfile.js"
+    ]
+  },
+  {
+    "outputFileName": "app/index.min.html",
+    "inputFiles": [
+      "app/index.html"
+    ]
+  }
+]
