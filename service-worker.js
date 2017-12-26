@@ -1,4 +1,5 @@
-var cacheName = 'weatherPWA-step-6-1';
+var cacheName = 'weatherPWA-v1';
+var dataCacheName = 'weatherData-v1';
 var filesToCache = [
   '/',
   '/index.html',
@@ -34,7 +35,7 @@ self.addEventListener('activate', function(e) {
 	e.waitUntil(
 		caches.keys().then(function(keyList) {
 			return Promise.all(keyList.map(function(key) {
-				if (key !== cacheName) {
+				if (key !== cacheName && key !== dataCacheName) {
 					console.log('[ServiceWorker] Removing old cache', key);
 					return caches.delete(key);
 				}
